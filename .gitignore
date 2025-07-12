@@ -1,0 +1,14 @@
+node_modules
+build
+dist
+blockstore
+datastore
+.docs
+.coverage
+package-lock.json
+yarn.lock
+.claude
+yarn.lock
+.vscode
+.tmp-compiled-docs
+tsconfig-doc-check.aegir.json

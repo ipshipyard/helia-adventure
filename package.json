@@ -1,0 +1,159 @@
+{
+  "name": "helia-adventure",
+  "version": "1.0.0",
+  "description": "Learn the building blocks of IPFS with Helia: CIDs, UnixFS, CAR files and content routing.",
+  "license": "Apache-2.0 OR MIT",
+  "homepage": "https://github.com/ipshipyard/helia-workshop",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipshipyard/helia-workshop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ipshipyard/helia-workshop"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "bin": {
+    "helia-workshop": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "exercises",
+    "i18n",
+    "lib"
+  ],
+  "scripts": {
+    "lint": "aegir lint",
+    "postinstall": "patch-package",
+    "test": "aegir test -t node",
+    "test:node": "aegir test -t node --cov",
+    "release": "aegir release"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "conventionalcommits",
+          "releaseRules": [
+            {
+              "breaking": true,
+              "release": "major"
+            },
+            {
+              "revert": true,
+              "release": "patch"
+            },
+            {
+              "type": "feat",
+              "release": "minor"
+            },
+            {
+              "type": "fix",
+              "release": "patch"
+            },
+            {
+              "type": "docs",
+              "release": "patch"
+            },
+            {
+              "type": "test",
+              "release": "patch"
+            },
+            {
+              "type": "deps",
+              "release": "patch"
+            },
+            {
+              "scope": "no-release",
+              "release": false
+            }
+          ]
+        }
+      ],
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": "conventionalcommits",
+          "presetConfig": {
+            "types": [
+              {
+                "type": "feat",
+                "section": "Features"
+              },
+              {
+                "type": "fix",
+                "section": "Bug Fixes"
+              },
+              {
+                "type": "chore",
+                "section": "Trivial Changes"
+              },
+              {
+                "type": "docs",
+                "section": "Documentation"
+              },
+              {
+                "type": "deps",
+                "section": "Dependencies"
+              },
+              {
+                "type": "test",
+                "section": "Tests"
+              }
+            ]
+          }
+        }
+      ],
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json"
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "@chainsafe/libp2p-noise": "^16.1.4",
+    "@chainsafe/libp2p-yamux": "^7.0.4",
+    "@helia/car": "^4.1.2",
+    "@helia/dag-cbor": "^4.0.6",
+    "@helia/http": "^2.1.2",
+    "@helia/ipns": "^8.2.3",
+    "@helia/routers": "^3.1.2",
+    "@helia/unixfs": "^5.0.3",
+    "@ipld/car": "^5.4.2",
+    "@libp2p/bootstrap": "^11.0.46",
+    "@libp2p/crypto": "^5.1.7",
+    "@libp2p/identify": "^3.0.38",
+    "@libp2p/kad-dht": "^15.1.10",
+    "@libp2p/mdns": "^11.0.46",
+    "@libp2p/ping": "^2.0.36",
+    "@libp2p/pnet": "^2.0.46",
+    "@libp2p/prometheus-metrics": "^4.3.29",
+    "@libp2p/tcp": "^10.1.18",
+    "blockstore-core": "^5.0.4",
+    "blockstore-fs": "^2.0.4",
+    "datastore-core": "^10.0.4",
+    "datastore-fs": "^10.0.4",
+    "helia": "^5.4.2",
+    "libp2p": "^2.9.0",
+    "multiformats": "^13.3.7",
+    "workshopper-adventure": "^7.0.0",
+    "workshopper-exercise": "^3.0.3"
+  },
+  "devDependencies": {
+    "aegir": "^47.0.20"
+  }
+}
