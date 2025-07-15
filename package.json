@@ -149,7 +149,8 @@
     "libp2p": "^2.9.0",
     "multiformats": "^13.3.7",
     "workshopper-adventure": "^7.0.0",
-    "workshopper-exercise": "^3.0.3"
+    "workshopper-exercise": "^3.0.3",
+    "workshopper-verify-processor": "^0.0.2"
   },
   "devDependencies": {
     "aegir": "^47.0.20"

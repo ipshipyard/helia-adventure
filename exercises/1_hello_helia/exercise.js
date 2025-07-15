@@ -1,61 +1,16 @@
-const Exercise = require('workshopper-exercise')
-const { spawn } = require('child_process')
+const exercise = require('workshopper-exercise')()
+const verifyProcessor = require('workshopper-verify-processor')
+const { loadSolution } = require('../../lib/utils.js')
 
-const exercise = new Exercise({
-  name: 'HELLO_HELIA',
-  title: 'Hello Helia',
-  problem: {
-    file: './problem.md'
-  },
-  solution: {
-    file: './solution.js'
-  }
-})
 
-exercise.addVerifyProcessor(function (args, callback) {
-  if (!args || args.length === 0) {
-    return callback(new Error('No solution file provided. Usage: helia-adventure verify solution.js'))
-  }
+exercise.addVerifyProcessor(verifyProcessor(exercise, async (test) => {
+  const { default: solutionFn } = await loadSolution(exercise.args[0])
 
-  const solutionFile = args[0]
-  
-  if (!solutionFile.endsWith('.js')) {
-    return callback(new Error('Solution file must be a JavaScript file (.js)'))
-  }
+  await test.truthy(typeof solutionFn === 'function', 'default_export_a_function')
 
-  const child = spawn('node', [solutionFile], {
-    cwd: process.cwd(),
-    stdio: 'pipe'
-  })
+  const cid = await solutionFn()
 
-  let output = ''
-  let error = ''
-
-  child.stdout.on('data', (data) => {
-    output += data.toString()
-  })
-
-  child.stderr.on('data', (data) => {
-    error += data.toString()
-  })
-
-  child.on('close', (code) => {
-    if (code !== 0) {
-      return callback(new Error(`Solution exited with code ${code}. Error: ${error}`))
-    }
-
-    if (output.includes('Added data with CID:') && output.includes('Retrieved: Hello, Helia!')) {
-      this.pass('✓ Correctly added and retrieved data with CID')
-      return callback(null, true)
-    } else {
-      this.fail('✗ Output should contain "Added data with CID:" and "Retrieved: Hello, Helia!"')
-      return callback(null, false)
-    }
-  })
-
-  child.on('error', (err) => {
-    callback(new Error(`Failed to run solution: ${err.message}`))
-  })
-})
+  await test.equals(cid.toString(), 'bagaaieraybluse4e46em46yyfg4r2juk2hcv6sum376qg53hxggczhjjwdia', 'correct_cid')
+}))
 
 module.exports = exercise

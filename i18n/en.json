@@ -1,0 +1,29 @@
+{
+  "title": "libp2p protocol adventure",
+  "appname": "protocol-adventure",
+  "exercise": {
+    "1_hello_helia": "Getting started with Helia"
+  },
+  "common": {
+    "exercise": {
+      "pass": {
+        "default_export_a_function": "The default export of the solution file was a function",
+        "export_a_function": "The '{{name}}' export of the solution file was a function"
+      },
+      "fail": {
+        "default_export_a_function": "The default export of the solution file was not a function",
+        "export_a_function": "The '{{name}}' export of the solution file was not a function"
+      }
+    }
+  },
+  "exercises": {
+    "1_hello_helia": {
+      "pass": {
+        "correct_cid": "You generated the correct CID"
+      },
+      "fail": {
+        "correct_cid": "The CID for the JSON object is wrong"
+      }
+    }
+  }
+}
