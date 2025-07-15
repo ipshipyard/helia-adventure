@@ -26,7 +26,6 @@
   ],
   "scripts": {
     "lint": "aegir lint",
-    "postinstall": "patch-package",
     "release": "aegir release"
   },
   "release": {
