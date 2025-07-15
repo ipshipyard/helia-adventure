@@ -3,20 +3,20 @@
   "version": "1.0.0",
   "description": "Learn the building blocks of IPFS with Helia: CIDs, UnixFS, CAR files and content routing.",
   "license": "Apache-2.0 OR MIT",
-  "homepage": "https://github.com/ipshipyard/helia-workshop",
+  "homepage": "https://github.com/ipshipyard/helia-adventure",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ipshipyard/helia-workshop.git"
+    "url": "git+https://github.com/ipshipyard/helia-adventure.git"
   },
   "bugs": {
-    "url": "https://github.com/ipshipyard/helia-workshop"
+    "url": "https://github.com/ipshipyard/helia-adventure"
   },
   "publishConfig": {
     "access": "public",
     "provenance": true
   },
   "bin": {
-    "helia-workshop": "./index.js"
+    "helia-adventure": "./index.js"
   },
   "files": [
     "index.js",
@@ -129,6 +129,7 @@
     "@helia/dag-cbor": "^4.0.6",
     "@helia/http": "^2.1.2",
     "@helia/ipns": "^8.2.3",
+    "@helia/json": "^4.0.6",
     "@helia/routers": "^3.1.2",
     "@helia/unixfs": "^5.0.3",
     "@ipld/car": "^5.4.2",
