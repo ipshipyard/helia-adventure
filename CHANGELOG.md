@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/ipshipyard/helia-adventure/compare/v1.0.0...v1.0.1) (2025-07-15)
+
+### Bug Fixes
+
+* remove patch-package ([e4c89ed](https://github.com/ipshipyard/helia-adventure/commit/e4c89edf604766f637f03d031350f81f5fafe535))
+
 ## 1.0.0 (2025-07-15)
 
 ### Features
