@@ -1,3 +1,9 @@
+## [1.3.1](https://github.com/ipshipyard/helia-adventure/compare/v1.3.0...v1.3.1) (2025-07-15)
+
+### Bug Fixes
+
+* typo ([fa74291](https://github.com/ipshipyard/helia-adventure/commit/fa742912cab23440e9d6c2c6c79bc98a3f1a7268))
+
 ## [1.3.0](https://github.com/ipshipyard/helia-adventure/compare/v1.2.0...v1.3.0) (2025-07-15)
 
 ### Features
