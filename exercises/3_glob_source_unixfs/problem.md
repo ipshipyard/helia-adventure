@@ -36,6 +36,7 @@ $ helia-adventure verify path/to/solution.mjs
 - Import `unixfs` and `globSource` from `@helia/unixfs`
 - Use `globSource(path, '**/*')` to create the source
 - Use `fs.addAll()` with `wrapWithDirectory: true` option
+- The last CID returned by `fs.addAll()` is the root directory CID
 - Save your solution as `3.mjs` in the current directory
 
 ## References

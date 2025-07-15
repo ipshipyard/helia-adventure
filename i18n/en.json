@@ -4,22 +4,24 @@
   "exercise": {
     "1_hello_helia": "Getting started with Helia",
     "2_unixfs": "UnixFS: files and directories",
-    "3_glob_source_unixfs": "UnixFS: merkleising files and directories using glob source"
+    "3_glob_source_unixfs": "UnixFS: merkleising files and directories using glob source",
+    "4_cars": "CAR files: creating a CAR file from a directory"
   },
   "common": {
     "exercise": {
       "pass": {
         "default_export_a_function": "The default export of the solution file was a function",
         "export_a_function": "The '{{name}}' export of the solution file was a function",
-        "correct_cid": "You generated the correct CID"
+        "correct_cid": "You generated the correct CID",
+        "car_correct_cid": "The CAR file has the correct root CID"
       },
       "fail": {
         "default_export_a_function": "The default export of the solution file was not a function",
         "export_a_function": "The '{{name}}' export of the solution file was not a function",
-        "correct_cid": "The CID you generated is incorrect (this could be because the inputs or options are wrong)"
+        "correct_cid": "The CID you generated is incorrect (this could be because the inputs or options are wrong)",
+        "car_correct_cid": "The root CID of the CAR file you generated is incorrect"
       }
     }
   },
-  "exercises": {
-  }
+  "exercises": {}
 }
