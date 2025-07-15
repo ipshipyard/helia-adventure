@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/ipshipyard/helia-adventure/compare/v1.0.2...v1.1.0) (2025-07-15)
+
+### Features
+
+* add second exercise ([7346bd4](https://github.com/ipshipyard/helia-adventure/commit/7346bd4c6aea0b5905ea9cb0dff96f33304c1e2a))
+
 ## [1.0.2](https://github.com/ipshipyard/helia-adventure/compare/v1.0.1...v1.0.2) (2025-07-15)
 
 ### Bug Fixes
