@@ -2,7 +2,6 @@ const exercise = require('workshopper-exercise')()
 const verifyProcessor = require('workshopper-verify-processor')
 const { loadSolution } = require('../../lib/utils.js')
 
-
 exercise.addVerifyProcessor(verifyProcessor(exercise, async (test) => {
   const { default: solutionFn } = await loadSolution(exercise.args[0])
 

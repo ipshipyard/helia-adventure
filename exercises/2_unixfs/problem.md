@@ -45,7 +45,6 @@ $ helia-adventure verify path/to/solution.mjs
 - Create file objects with `path` and `content` properties
 - Use `TextEncoder` to encode string content to `Uint8Array`
 - Use `UnixFS.addAll()` with an array of file objects
-- Use `wrapWithDirectory: true` option to create a root directory
 - Save your solution as `2.mjs` in the current directory
 
 ## References

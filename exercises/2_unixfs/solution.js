@@ -19,7 +19,7 @@ export default async function () {
   ]
 
   let rootCid
-  for await (const entry of fs.addAll(files, { wrapWithDirectory: true })) {
+  for await (const entry of fs.addAll(files)) {
     if (entry.path === '') {
       rootCid = entry.cid
     }

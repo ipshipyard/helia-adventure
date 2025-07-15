@@ -3,7 +3,7 @@
   "appname": "protocol-adventure",
   "exercise": {
     "1_hello_helia": "Getting started with Helia",
-    "2_unixfs": "Files and directories with UnixFS"
+    "2_unixfs": "UnixFS: Files and Directories"
   },
   "common": {
     "exercise": {
