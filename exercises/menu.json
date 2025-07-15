@@ -1,4 +1,5 @@
 [
   "1_hello_helia",
-  "2_unixfs"
+  "2_unixfs",
+  "3_glob_source_unixfs"
 ]

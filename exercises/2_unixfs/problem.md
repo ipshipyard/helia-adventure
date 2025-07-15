@@ -1,20 +1,21 @@
 ## UnixFS
 
-[UnixFS](https://github.com/ipfs/specs/tree/master/unixfs) is the binary format used by IPFS to represent files and directories. It allows you to create immutable content-addressed representation of a filesystem, where directories and files are all addressed by CIDs:
+[UnixFS](https://github.com/ipfs/specs/tree/master/unixfs) is the binary format used by IPFS to represent files and directories as [Merkle DAGs](https://docs.ipfs.tech/concepts/merkle-dag/). 
+
+UnixFS creates an immutable content-addressed representation of a filesystem, where directories and files are all blocks of data addressed by CIDs:
 
 UnixFS has the following properties:
 
 - A single CID can be used to address (and verify) anything from a single file to a large directory of any size
--  large files are chunked into smaller chunks, allowing for incremental verification
+- Large files are chunked into smaller chunks, allowing for incremental verification
 - Perfect for publishing static sites and apps with IPFS: you can take build outputs encode them with UnixFS
-- 
 
 ## Challenge
 
 Create a node.js script (ESM) that exports a default async function:
 
 ```js
-export default async function() {
+export default async function () {
   // your code
 }
 ```
