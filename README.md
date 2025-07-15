@@ -27,15 +27,15 @@ Yes you can, but due to complications around everyone's preferred TypeScript set
 
 ```console
 $ tsc my-solution.ts
-$ protocol-adventure verify ./build/my-solution.js
+$ helia-adventure verify ./build/my-solution.js
 ```
 
 # License
 
 Licensed under either of
 
-- Apache 2.0, ([LICENSE-APACHE](https://github.com/libp2p/js-libp2p-protocol-adventure/LICENSE-APACHE) / <http://www.apache.org/licenses/LICENSE-2.0>)
-- MIT ([LICENSE-MIT](https://github.com/libp2p/js-libp2p-protocol-adventure/LICENSE-MIT) / <http://opensource.org/licenses/MIT>)
+- Apache 2.0, ([LICENSE-APACHE](./LICENSE-APACHE) <http://www.apache.org/licenses/LICENSE-2.0>)
+- MIT ([LICENSE-MIT](./LICENSE-MIT) / <http://opensource.org/licenses/MIT>)
 
 # Contribution
 
