@@ -1,6 +1,6 @@
 {
-  "title": "libp2p protocol adventure",
-  "appname": "protocol-adventure",
+  "title": "Helia Adventure",
+  "appname": "helia-adventure",
   "exercise": {
     "1_hello_helia": "Getting started with Helia",
     "2_unixfs": "UnixFS: files and directories",
