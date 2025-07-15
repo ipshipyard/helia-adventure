@@ -14,7 +14,7 @@ const exercise = new Exercise({
 
 exercise.addVerifyProcessor(function (args, callback) {
   if (!args || args.length === 0) {
-    return callback(new Error('No solution file provided. Usage: helia-workshop verify solution.js'))
+    return callback(new Error('No solution file provided. Usage: helia-adventure verify solution.js'))
   }
 
   const solutionFile = args[0]
