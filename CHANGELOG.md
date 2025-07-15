@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/ipshipyard/helia-adventure/compare/v1.0.1...v1.0.2) (2025-07-15)
+
+### Bug Fixes
+
+* first challenge verification and structure ([2959190](https://github.com/ipshipyard/helia-adventure/commit/2959190830b1e91ea65806d08850d35d5455fc5a))
+
 ## [1.0.1](https://github.com/ipshipyard/helia-adventure/compare/v1.0.0...v1.0.1) (2025-07-15)
 
 ### Bug Fixes
