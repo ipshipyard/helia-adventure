@@ -1,6 +1,6 @@
 {
   "name": "helia-adventure",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Learn the building blocks of IPFS with Helia: CIDs, UnixFS, CAR files and content routing.",
   "license": "Apache-2.0 OR MIT",
   "homepage": "https://github.com/ipshipyard/helia-adventure",

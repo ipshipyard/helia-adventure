@@ -1,3 +1,17 @@
+## [1.2.0](https://github.com/ipshipyard/helia-adventure/compare/v1.1.0...v1.2.0) (2025-07-15)
+
+### Features
+
+* add third exercise on unixfs with glob source ([a6b004a](https://github.com/ipshipyard/helia-adventure/commit/a6b004a7101b9097c8c834c19476bda8df4f3efd))
+
+### Trivial Changes
+
+* refine second exercise by simplifying ([8155d50](https://github.com/ipshipyard/helia-adventure/commit/8155d50a51f62208f7be03a44d49150f52acd97a))
+
+### Documentation
+
+* corrections to readme ([3a712d0](https://github.com/ipshipyard/helia-adventure/commit/3a712d0d142ac5b248e2d83de1c61ce0bfc0a984))
+
 ## [1.1.0](https://github.com/ipshipyard/helia-adventure/compare/v1.0.2...v1.1.0) (2025-07-15)
 
 ### Features
