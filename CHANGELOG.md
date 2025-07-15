@@ -1,3 +1,9 @@
+## [1.3.2](https://github.com/ipshipyard/helia-adventure/compare/v1.3.1...v1.3.2) (2025-07-15)
+
+### Bug Fixes
+
+* remove car file from repo ([429d98e](https://github.com/ipshipyard/helia-adventure/commit/429d98ea69a8ca9f38f9039031a941488f5d8779))
+
 ## [1.3.1](https://github.com/ipshipyard/helia-adventure/compare/v1.3.0...v1.3.1) (2025-07-15)
 
 ### Bug Fixes
