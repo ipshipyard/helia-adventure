@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/ipshipyard/helia-adventure/compare/v1.2.0...v1.3.0) (2025-07-15)
+
+### Features
+
+* add 4th exercise for creating cars ([204894b](https://github.com/ipshipyard/helia-adventure/commit/204894b17a06a5815fd4b93fc9ad091b1dd1bf51))
+
 ## [1.2.0](https://github.com/ipshipyard/helia-adventure/compare/v1.1.0...v1.2.0) (2025-07-15)
 
 ### Features
