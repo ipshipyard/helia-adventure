@@ -29,7 +29,7 @@ The function should:
 Once you have done this, verify your solution:
 
 ```console
-$ helia-adventure verify path/to/solution.mjs
+$ helia-adventure verify path/to/1.mjs
 ```
 
 ## Hints
