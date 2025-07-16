@@ -2,5 +2,6 @@
   "1_hello_helia",
   "2_unixfs",
   "3_glob_source_unixfs",
-  "4_cars"
+  "4_cars",
+  "5_routers_blockbrokers"
 ]

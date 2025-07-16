@@ -5,7 +5,8 @@
     "1_hello_helia": "Getting started with Helia",
     "2_unixfs": "UnixFS: files and directories",
     "3_glob_source_unixfs": "UnixFS: merkleising files and directories using glob source",
-    "4_cars": "CAR files: creating a CAR file from a directory"
+    "4_cars": "CAR files: creating a CAR file from a directory",
+    "5_routers_blockbrokers": "Routers and Block Brokers: configuring content routing"
   },
   "common": {
     "exercise": {
@@ -23,5 +24,26 @@
       }
     }
   },
-  "exercises": {}
+  "exercises": {
+    "5_routers_blockbrokers": {
+      "pass": {
+        "default_export_an_object": "The default export of the solution file was an object",
+        "bitswapNode_is_function": "The 'bitswapNode' property was a function",
+        "gatewayNode_is_function": "The 'gatewayNode' property was a function",
+        "bitswap_returns_stat_object": "The bitswapNode function returned a stat object",
+        "gateway_returns_stat_object": "The gatewayNode function returned a stat object",
+        "bitswap_correct_cid": "The bitswapNode function returned the correct CID",
+        "gateway_correct_cid": "The gatewayNode function returned the correct CID"
+      },
+      "fail": {
+        "default_export_an_object": "The default export of the solution file was not an object",
+        "bitswapNode_is_function": "The 'bitswapNode' property was not a function",
+        "gatewayNode_is_function": "The 'gatewayNode' property was not a function",
+        "bitswap_returns_stat_object": "The bitswapNode function did not return a stat object",
+        "gateway_returns_stat_object": "The gatewayNode function did not return a stat object",
+        "bitswap_correct_cid": "The bitswapNode function did not return the correct CID",
+        "gateway_correct_cid": "The gatewayNode function did not return the correct CID"
+      }
+    }
+  }
 }
