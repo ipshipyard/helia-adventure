@@ -1,3 +1,9 @@
+## [1.4.0](https://github.com/ipshipyard/helia-adventure/compare/v1.3.2...v1.4.0) (2025-07-16)
+
+### Features
+
+* add routers and block brokers exercise ([4f2d291](https://github.com/ipshipyard/helia-adventure/commit/4f2d291b72d201b37773abb538606fc47b1757c5))
+
 ## [1.3.2](https://github.com/ipshipyard/helia-adventure/compare/v1.3.1...v1.3.2) (2025-07-15)
 
 ### Bug Fixes
