@@ -153,6 +153,6 @@
     "workshopper-verify-processor": "^0.0.2"
   },
   "devDependencies": {
-    "aegir": "^47.0.20"
+    "aegir": "^48.1.0"
   }
 }
